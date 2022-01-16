@@ -54,7 +54,8 @@ class AssetCollector:
 
 
 def main():
-	collector = AssetCollector('https://printivo.com/')
+	url = input("Enter website url : ")
+	collector = AssetCollector(url)
 	collector.fetch_assets()
 
 
